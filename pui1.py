@@ -86,12 +86,43 @@ print('kraj')
 
 '''
 '''
-#primjer pretraživanja polja
+#primjer pretraživanja polja:
+
+lista = [4,12,3,8,9]
+x = 8
+for i in range(len(lista)):
+	if x == lista[i]:
+		print('broj je pronađen indeksu:', i)
+		
+#pretraživanje korisštenjem list.index() metode:
+
+lista = [4,9,15,34,44,6,12,2,11]
+x = eval(input('unesite broj koji zelite pronaci'))
+tr = lista.index(2)
+print ('broj je pronađen na indeksu:', tr)
 '''
 '''
-primjer korištenja modula time
-štoperica
-brojač
+#primjer korištenja modula time
+
+#program koji mjeri vrijeme izvođenja nekog programa:
+import time
+input('pritisnite bilo koju tipku za početak')
+start =time.time()
+print('brojac vremena pokrenut.')
+input('unesite tipku na kraj')
+kraj = time.time()
+trajanje = kraj - start
+print ('program je trajao ', trajanje, 'sekundi')
+
+
+#štoperica
+import time
+t = int(input('unesite broj sekundi:'))
+while t:
+	print(t)
+	time.sleep(1)
+	t=t-1
+print('gotovo')
 '''
 
 
